@@ -1,13 +1,63 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+.home {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+.cats-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-left: 50px;
+  text-align: center;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
+  width: 350px;
+  height: auto;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+img {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px 5px 0 0;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+h3 {
+  padding: 3px;
+}
+button {
+  background-color: #3369dd; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.dislike-btn {
+  background-color: #dd3333;
 }
